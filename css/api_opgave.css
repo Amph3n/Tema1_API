@@ -26,6 +26,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+.bblogindlaeg1 {
+  width: 100%;
+  display: none; }
+
 .boverskrift {
   text-align: center;
   padding-top: 5%;
@@ -61,5 +65,76 @@ img {
   display: inline-block;
   font-size: 14px;
   font-family: Arial; }
+
+.bsnowwhite, .btoystory, .bblairwitch, .bsoldier, .bjulia, .bbreakfastclub, .bwestside, .bpulpfiction, .bavatar, .bstarwars {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Merriweather', serif; }
+
+.bsnowwhiteimage, .bsoldierimage, .bjuliaimage, .bbreakfastclubimage, .bwestsideimage, .bpulpfictionimage, .bstarwarsimage {
+  height: 300px;
+  width: 100%; }
+
+.bsnowwhitetext, .btoystorytext, .bblairwitchtext, .bsoldiertext, .bjuliatext, .bbreakfastclubtext, .bwestsidetext, .bpulpfictiontext, .bavatartext, .bstarwarstext {
+  padding: 5% 5% 5% 0%;
+  font-family: Arial; }
+
+.btoystoryimage, .bblairwitchimage, .bavatarimage {
+  height: 450px;
+  width: 100%; }
+
+.bbutton2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 45%;
+  padding: 1% 1% 1% 1%;
+  background-color: black;
+  /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Arial; }
+
+.boverskrift2 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Merriweather', serif; }
+
+.bimage2 {
+  height: 300px;
+  width: 100%; }
+
+.bteaser2 {
+  text-align: center;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: Arial; }
+
+.bbutton3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 27%;
+  padding: 1% 1% 1% 1%;
+  background-color: black;
+  /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Arial; }
+
+.bblogindlaeg2 {
+  width: 100%;
+  display: none;
+  font-family: Arial;
+  margin-bottom: 5%; }
 
 /*# sourceMappingURL=api_opgave.css.map */
