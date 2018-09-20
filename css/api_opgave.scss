@@ -52,6 +52,11 @@ img {
 
 // Sofie Start
 
+.bblogindlaeg1 {
+  width: 100%;
+  display: none;
+}
+
 .boverskrift {
   text-align: center;
   padding-top: 5%;
@@ -92,6 +97,188 @@ img {
   font-family: Arial;
 }
 
+.bsnowwhite {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Merriweather', serif;
+}
+
+.bsnowwhiteimage {
+  height: 300px;
+  width: 100%;
+}
+
+.bsnowwhitetext {
+  padding: 5% 5% 5% 0%;
+  font-family: Arial;
+}
+
+.btoystory {
+  @extend .bsnowwhite;
+}
+
+.btoystoryimage {
+  height: 450px;
+  width: 100%;
+}
+
+.btoystorytext {
+  @extend .bsnowwhitetext;
+}
+
+.bblairwitch {
+  @extend .bsnowwhite;
+}
+
+.bblairwitchimage {
+  @extend .btoystoryimage;
+}
+
+.bblairwitchtext {
+  @extend .bsnowwhitetext;
+}
+
+.bsoldier {
+  @extend .bsnowwhite;
+}
+
+.bsoldierimage {
+  @extend .bsnowwhiteimage;
+}
+
+.bsoldiertext {
+  @extend .bsnowwhitetext;
+}
+
+.bjulia {
+  @extend .bsnowwhite;
+}
+
+.bjuliaimage {
+  @extend .bsnowwhiteimage;
+}
+
+.bjuliatext {
+  @extend .bsnowwhitetext;
+}
+
+.bbreakfastclub {
+  @extend .bsnowwhite;
+}
+
+.bbreakfastclubimage {
+  @extend .bsnowwhiteimage;
+}
+
+.bbreakfastclubtext {
+  @extend .bsnowwhitetext;
+}
+
+.bwestside {
+  @extend .bsnowwhite;
+}
+
+.bwestsideimage {
+  @extend .bsnowwhiteimage;
+}
+
+.bwestsidetext {
+  @extend .bsnowwhitetext;
+}
+
+.bpulpfiction {
+  @extend .bsnowwhite;
+}
+
+.bpulpfictionimage {
+  @extend .bsnowwhiteimage;
+}
+
+.bpulpfictiontext {
+  @extend .bsnowwhitetext;
+}
+
+.bavatar {
+  @extend .bsnowwhite;
+}
+
+.bavatarimage {
+  @extend .btoystoryimage;
+}
+
+.bavatartext {
+  @extend .bsnowwhitetext;
+}
+
+.bstarwars  {
+  @extend .bsnowwhite;
+}
+
+.bstarwarsimage {
+  @extend .bsnowwhiteimage;
+}
+
+.bstarwarstext {
+  @extend .bsnowwhitetext;
+}
+
+.bbutton2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 45%;
+    padding: 1% 1% 1% 1%;
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.boverskrift2 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Merriweather', serif;
+}
+
+.bimage2 {
+  height: 300px;
+  width: 100%;
+}
+
+.bteaser2 {
+  text-align: center;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: Arial;
+}
+
+.bbutton3 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 27%;
+  padding: 1% 1% 1% 1%;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.bblogindlaeg2 {
+  width: 100%;
+  display: none;
+  font-family: Arial;
+  margin-bottom: 5%;
+}
 // Sofie Slut
 
 
