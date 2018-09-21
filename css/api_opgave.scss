@@ -37,7 +37,99 @@ img {
 }
 
 // Oliver start
-//Hej
+
+.blur_back {
+  background: url(../images/inter.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+header {
+  grid-row: 1;
+  height: auto;
+}
+
+.h_grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.h_left {
+  grid-row: 1;
+  grid-column: 1;
+
+  img {
+    margin: 5px;
+  }
+}
+
+nav {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.dropdown {
+  position: relative;
+  grid-column: 2;
+}
+
+.fa-bars {
+  color: black; }
+
+.dropdown_btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  right: 12px;
+  top: 7px; }
+
+.dropdown_btn:hover {
+  cursor: pointer; }
+
+.h_content {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  min-width: 80%;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.h_menu1, .h_menu2, .h_menu3 {
+  a {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Classico URW";
+    line-height: 30px;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+main {
+  grid-row: 2;
+}
+
+footer {
+  grid-row: 3;
+}
 
 
 // Oliver Slut

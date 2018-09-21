@@ -6,6 +6,9 @@
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
 
+    <!-- Font awesome embed code !-->
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
 
@@ -28,13 +31,83 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<div class="blur_back">
+<div class="main_grid">
+    <header>
+        <div class="h_grid">
+
+            <div class="h_left">
+                <img src="images/zap_info.svg" class="h_logo">
+            </div>
+
+            <nav>
+                <div class="dropdown">
+                    <button class="dropdown_btn">
+                        <i class="fa fa-bars fa-3x"></i>
+                    </button>
+                    <div class="h_content">
+
+                            <div class="h_menu1">
+                                <a href="Genre.html">Genre</a>
+                            </div>
+
+                            <div class="h_menu2">
+                                <a href="skuespillere.html">Skuespillere</a>
+                            </div>
+
+                            <div class="h_menu3">
+                                <a href="blog.html">Blog</a>
+                            </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</div>
+</div>
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function (e) {
-        // Din kode her
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 767) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
     });
 </script>
 </body>
