@@ -40,13 +40,59 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<div class="g_action">
+
+</div>
+
+<br>
+
+<div class="g_actions">
+
+</div>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
-$(
-    document).ready(function(e) {
-        // Din kode her
-}
-    );
+    $.ajax({
+
+        type: "GET",
+
+        dataType: "json",
+
+        url: "https://api.themoviedb.org/3/list/28",
+
+        data: {
+            'api_key':'9e87cab19a9443cceddfd5f527cb5e44',
+
+            'language':'da-dk'
+
+        },
+
+        success: function(result) {
+
+            console.log(result);
+            $(".g_action").html(result.items[0].title);
+            $(".g_action").html("<img src='http://image.tmdb.org/t/p/w780" + result.items[0].poster_path + "'>");
+
+
+            $.each(result.items, function (k, v) {
+
+                $(".g_actions").append(v.title + " - " + v.release_date + "<br>");
+
+            });
+
+        },
+
+        error: function (error) {
+            console.log(error);
+            // Hvis der sker fejl
+
+            alert("Fejl");
+        }
+
+    });
+
 </script>
 
 </body>
