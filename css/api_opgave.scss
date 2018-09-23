@@ -154,6 +154,50 @@ nav {
 // Marcus Start
 
 
+.g_boksen{
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.g_actionflex{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.g_action img{
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%;
+}
+
+.g_actions{
+  min-width:50%;
+}
+
+.g_komedieflex{
+  display: flex;
+  flex-direction: row;
+  margin: 15%;
+  display: none;
+}
+
+.g_sorter{
+  width: 200px;
+}
+
+#sorterelements{
+  text-align: center;
+  margin-top: 5%;
+}
+
+
 // Marcus Slut
 
 
@@ -472,7 +516,14 @@ nav {
 
 
   // Marcus Start
-
+  .g_boksen{
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+  }
 
 
   // Marcus Slut
