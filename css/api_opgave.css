@@ -33,18 +33,16 @@ img {
 
 .main_grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr; }
+  grid-template-rows: 10% 1fr 1fr;
+  height: 100vh; }
 
-header {
+#h_header {
   grid-row: 1;
-  height: auto; }
-
-.h_grid {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.5); }
+  grid-template-columns: repeat(2, 1fr); }
 
 .h_left {
   grid-row: 1;
@@ -90,7 +88,7 @@ nav {
 
 .h_menu1 a, .h_menu2 a, .h_menu3 a {
   color: black;
-  margin: auto;
+  margin: 7px;
   text-decoration: none;
   font-size: 18px;
   font-family: "Classico URW";
@@ -98,10 +96,23 @@ nav {
   justify-content: center;
   display: flex; }
 
-main {
-  grid-row: 2; }
+.h_poster {
+  background: url("../images/inter_halfrez.jpg") center no-repeat; }
 
-footer {
+.h_headtext, .h_resumetext {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: arial;
+  font-weight: normal;
+  padding: 10px; }
+
+.h_headtext {
+  font-size: 19pt; }
+
+.h_resumetext {
+  font-size: 13pt; }
+
+#h_footer {
   grid-row: 3; }
 
 .g_boksen {
