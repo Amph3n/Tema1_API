@@ -38,6 +38,114 @@ img {
 
 // Oliver start
 
+.blur_back {
+  background: url(../images/inter.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main_grid {
+  display: grid;
+  grid-template-rows: 10% 1fr 1fr;
+  height: 100vh;
+}
+
+#h_header {
+  grid-row: 1;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.h_left {
+  grid-row: 1;
+  grid-column: 1;
+
+  img {
+    margin: 5px;
+  }
+}
+
+nav {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.dropdown {
+  position: relative;
+  grid-column: 2;
+}
+
+.fa-bars {
+  color: black; }
+
+.dropdown_btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  right: 12px;
+  top: 7px; }
+
+.dropdown_btn:hover {
+  cursor: pointer; }
+
+.h_content {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  min-width: 80%;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.h_menu1, .h_menu2, .h_menu3 {
+  a {
+    color: black;
+    margin: 7px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Classico URW";
+    line-height: 30px;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+#h_main{
+}
+
+.h_poster {
+  background: url("../images/inter_halfrez.jpg") center no-repeat;
+}
+
+.h_headtext, .h_resumetext {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: arial;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.h_headtext {
+  font-size: 19pt;
+}
+
+.h_resumetext {
+  font-size: 13pt;
+}
+
+#h_footer {
+  grid-row: 3;
+}
 
 
 // Oliver Slut
@@ -45,6 +153,49 @@ img {
 
 // Marcus Start
 
+
+.g_boksen{
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.g_actionflex{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.g_action img{
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%;
+}
+
+.g_actions{
+  min-width:50%;
+}
+
+.g_komedieflex{
+  display: flex;
+  flex-direction: row;
+  margin: 15%;
+  display: none;
+}
+
+.g_sorter{
+  width: 200px;
+}
+
+#sorterelements{
+  text-align: center;
+  margin-top: 5%;
+}
 
 
 // Marcus Slut
@@ -283,7 +434,32 @@ img {
 
 
 // Adem Start
+.s_boksen{
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
 
+.s_skuespillerflex{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.s_skue1 img{
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%;
+}
+
+.s_skuetekst1{
+  min-width:50%;
+}
 
 
 // Adem Slut
@@ -382,7 +558,14 @@ img {
 
 
   // Marcus Start
-
+  .g_boksen{
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+  }
 
 
   // Marcus Slut
@@ -396,6 +579,14 @@ img {
 
 
   // Adem Start
+  .s_boksen{
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+  }
 
 
 

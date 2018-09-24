@@ -25,10 +25,17 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/api_opgave.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+    body{
+        background-color: black;
+    }
+</style>
 
 </head>
 
@@ -36,13 +43,132 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<div class="g_boksen">
+
+<div class="g_sorter">
+    <span id="sorterbars" class="fas fa-angle-down"></span>
+</div>
+
+    <div id="sorterelements">
+        <select>
+            <option value="0">Action</option>
+            <option value="1">Komedie</option>
+            <option value="2">Drama</option>
+            <option value="3">Gys</option>
+        </select>
+    </div>
+
+
+
+
+<div class="g_actionflex">
+
+        <div class="g_action">
+
+        </div>
+
+    <br>
+
+        <div class="g_actions">
+
+        </div>
+
+
+</div>
+</div>
+
+<div class="g_komedieflex">
+    <div class="g_komedie">
+
+    </div>
+
+    <br>
+
+    <div class="g_komedies">
+
+    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
-$(
-    document).ready(function(e) {
-        // Din kode her
-}
-    );
+
+    $.ajax({
+
+        type: "GET",
+
+        dataType: "json",
+
+        url: "https://api.themoviedb.org/3/list/28",
+
+        data: {
+            'api_key':'9e87cab19a9443cceddfd5f527cb5e44',
+
+            'language':'da-dk'
+
+        },
+
+        success: function(result) {
+
+            console.log(result);
+            $(".g_action").html(result.items[0].title);
+            $(".g_action").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
+
+            $.each(result.items, function (k, v) {
+
+                $(".g_actions").append(v.title + " - " + v.release_date + "<br><br><br>");
+
+            });
+
+        },
+
+        error: function (error) {
+            console.log(error);
+            // Hvis der sker fejl
+
+            alert("Fejl");
+        }
+
+    });
+
+    $.ajax({
+
+        type: "GET",
+
+        dataType: "json",
+
+        url: "https://api.themoviedb.org/3/list/29",
+
+        data: {
+            'api_key':'9e87cab19a9443cceddfd5f527cb5e44',
+
+            'language':'da-dk'
+
+        },
+
+        success: function(result) {
+
+            console.log(result);
+            $(".g_komedie").html(result.items[0].title);
+            $(".g_komedie").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>");
+
+
+            $.each(result.items, function (k, v) {
+
+                $(".g_komedies").append(v.title + " - " + v.release_date + "<br>");
+
+            });
+
+        },
+
+        error: function (error) {
+            console.log(error);
+            // Hvis der sker fejl
+
+            alert("Fejl");
+        }
+
+    });
+
 </script>
 
 </body>
