@@ -115,6 +115,19 @@ nav {
 #h_footer {
   grid-row: 3; }
 
+
+.h_blackbox {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.h_arrowleft, .h_arrowright {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: inherit; }
+  .h_arrowleft i, .h_arrowright i {
+    color: white; }
+
 .g_boksen {
   height: 100%;
   background-color: white;
