@@ -262,8 +262,39 @@ nav {
   font-family: Arial;
   margin-bottom: 5%; }
 
+.s_boksen {
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%; }
+
+.s_skuespillerflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.s_skue1 img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.s_skuetekst1 {
+  min-width: 50%; }
+
 @media screen and (min-width: 1200px) {
   .g_boksen {
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%; }
+
+  .s_boksen {
     height: 100%;
     background-color: white;
     opacity: 0.4;
