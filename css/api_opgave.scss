@@ -147,6 +147,22 @@ nav {
   grid-row: 3;
 }
 
+.h_blackbox {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.h_arrowleft, .h_arrowright {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, -1);
+  font-family: inherit;
+
+  i {
+    color: white;
+  }
+}
+
 
 // Oliver Slut
 
