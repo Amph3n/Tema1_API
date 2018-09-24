@@ -113,7 +113,6 @@
             $(".g_action").html(result.items[0].title);
             $(".g_action").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
 
-
             $.each(result.items, function (k, v) {
 
                 $(".g_actions").append(v.title + " - " + v.release_date + "<br><br><br>");
