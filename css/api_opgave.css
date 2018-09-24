@@ -115,6 +115,7 @@ nav {
 #h_footer {
   grid-row: 3; }
 
+
 .h_blackbox {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85); }
@@ -126,6 +127,42 @@ nav {
   font-family: inherit; }
   .h_arrowleft i, .h_arrowright i {
     color: white; }
+
+.g_boksen {
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%; }
+
+.g_actionflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.g_action img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_actions {
+  min-width: 50%; }
+
+.g_komedieflex {
+  display: flex;
+  flex-direction: row;
+  margin: 15%;
+  display: none; }
+
+.g_sorter {
+  width: 200px; }
+
+#sorterelements {
+  text-align: center;
+  margin-top: 5%; }
 
 .bblogindlaeg1 {
   width: 100%;
@@ -237,5 +274,62 @@ nav {
   display: none;
   font-family: Arial;
   margin-bottom: 5%; }
+
+@media screen and (min-width: 768px) {
+  .boverskrift {
+    margin-right: 5%; }
+
+  .boverskrift1 {
+    margin-right: 5%; }
+
+  .btopimage {
+    width: 35%;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: -3%; }
+
+  .bteaser1 {
+    margin-top: -3%; } 
+
+.s_boksen {
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%; }
+
+.s_skuespillerflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.s_skue1 img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.s_skuetekst1 {
+  min-width: 50%; }}
+
+@media screen and (min-width: 1200px) {
+  .g_boksen {
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%; }
+
+  .s_boksen {
+    height: 100%;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%; } }
+
 
 /*# sourceMappingURL=api_opgave.css.map */
