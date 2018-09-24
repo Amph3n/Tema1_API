@@ -137,4 +137,20 @@ img {
   font-family: Arial;
   margin-bottom: 5%; }
 
+@media screen and (min-width: 768px) {
+  .boverskrift {
+    margin-right: 5%; }
+
+  .boverskrift1 {
+    margin-right: 5%; }
+
+  .btopimage {
+    width: 35%;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: -3%; }
+
+  .bteaser1 {
+    margin-top: -3%; } }
+
 /*# sourceMappingURL=api_opgave.css.map */
