@@ -227,7 +227,8 @@ nav {
 .g_action img{
   border-radius: 50%;
   max-height: 200px;
-  width: 50%;
+  width: 50vw;
+  max-width: 50%;
 }
 
 .g_actions{
@@ -239,6 +240,7 @@ nav {
   height: 15vh;
   width: auto;
   background-color: white;
+  font-family: Arial;
 }
 
 .g_komedieflex{
@@ -252,7 +254,8 @@ nav {
 .g_komedie img{
   border-radius: 50%;
   max-height: 200px;
-  width: 50%;
+  width: 50vw;
+  max-width: 50%;
 }
 
 .g_komedies{
@@ -264,6 +267,7 @@ nav {
   height: 15vh;
   width: auto;
   background-color: white;
+  font-family: Arial;
 }
 
 .g_gysflex{
@@ -278,7 +282,8 @@ nav {
 .g_gys img{
   border-radius: 50%;
   max-height: 200px;
-  width: 50%;
+  width: 50vw;
+  max-width: 50%;
 }
 
 .g_gyss{
@@ -291,6 +296,7 @@ nav {
   height: 15vh;
   width: auto;
   background-color: white;
+  font-family: Arial;
 }
 .g_dramaflex{
   display: flex;
@@ -315,6 +321,7 @@ nav {
   height: 15vh;
   width: auto;
   background-color: white;
+  font-family: Arial;
 }
 
 .eContentAside{
@@ -337,6 +344,7 @@ nav {
   font-size: 12pt;
   width: 150px;
   margin-top: 5%;
+  font-family: Arial;
 }
 
 .eDropContent{
@@ -347,6 +355,7 @@ nav {
   width: 150px;
   background-color: white;
   outline: 5px auto #5d5d5d;
+  font-family: Arial;
 }
 
 .eDropBtnMon{
@@ -1018,6 +1027,7 @@ nav {
     height: 25vh;
     width: auto;
   }
+  
 
 
 
