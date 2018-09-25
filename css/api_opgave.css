@@ -391,13 +391,8 @@ nav {
   font-family: Arial;
   margin-bottom: 5%; }
 
-
-.fritekst {
-  color: red; }
-
 .bbgimage {
   background-color: #12266b; }
-
 
 .bbg {
   width: 100%;
@@ -405,29 +400,26 @@ nav {
   background-color: #12266b;
   opacity: 0.98; }
 
-.s_boksen {
-  height: 100%;
-  background-color: white;
-  opacity: 0.4;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%; }
-
-.s_skuespillerflex {
+.footergrid {
   display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%; }
+  margin: 0 2px; }
 
+.fritekst {
+  color: white;
+  margin-left: 15px; }
 
 .some {
-  color: red; }
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 15px;
+  letter-spacing: 5px; }
 
 .tyndbox {
   background-color: white;
   width: 100%;
-  height: 10px;
+  height: 5px;
   outline: 2px auto black; }
 
 @media screen and (min-width: 768px) {
@@ -599,7 +591,19 @@ nav {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: black; } }
+    background-color: black; }
+
+  .fritekst {
+    color: white;
+    margin-left: 150px; }
+
+  .some {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 149px;
+    letter-spacing: 5px; } }
 @media screen and (min-width: 1200px) {
   .h_poster2 {
     display: block; }
@@ -615,7 +619,6 @@ nav {
     background-color: rgba(255, 255, 255, 0.3);
     margin-left: 20%;
     margin-right: 20%;
-
     margin-top: 5%; }
 
   .g_action {
@@ -660,14 +663,6 @@ nav {
 
   .g_dramabox {
     height: 25vh;
-    width: auto; }
-
-  .s_boksen {
-    height: 100%;
-    background-color: white;
-    opacity: 0.4;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10%; } }
+    width: auto; } }
 
 /*# sourceMappingURL=api_opgave.css.map */
