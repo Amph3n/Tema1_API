@@ -5,7 +5,7 @@
 
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
-
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
 
@@ -33,7 +33,7 @@
 
 <style>
     body{
-        background-color: black;
+background-color: black;
     }
 </style>
 
@@ -45,49 +45,106 @@
 
 <div class="g_boksen">
 
-<div class="g_sorter">
-    <span id="sorterbars" class="fas fa-angle-down"></span>
+        <div class="eEventFlex">
+            <aside class="eContentAside">
+                <div class="eAsideFlex">
+
+                    <button class="eDropBtn">Sorter efter  <i class="fa fa-angle-down"></i></button>
+                    <div class="eDropContent">
+                        <button class="eDropBtnMon eMon1Btn">Action</button>
+                        <button class="eDropBtnMon eMon2Btn">Komedie</button>
+                        <button class="eDropBtnMon eMon3Btn">Gys</button>
+                        <button class="eDropBtnMon eMon4Btn">Drama</button>
+
+                    </div>
+
+
+                </div>
+            </aside>
+
+            <!-- Her starter liste over events.
+            Ude i den virkelige verden ville vi sætte disse op i PHP -->
+
+            <div class="eEventsList">
+                <div class="eFlex ePaginate eMon1">
+                        <div class="g_actionflex">
+
+                            <div class="g_action">
+
+                            </div>
+
+                            <br>
+
+                            <div class="g_actions">
+
+                            </div>
+
+                </div>
+                </div>
+
+
+                <div class="eFlex ePaginate eMon2">
+                    <div class="g_komedieflex">
+                        <div class="g_komedie">
+
+                        </div>
+
+                        <br>
+
+                        <div class="g_komedies">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="eFlex ePaginate eMon3">
+                    <div class="g_gysflex">
+                        <div class="g_gys">
+
+                        </div>
+
+                        <br>
+
+                        <div class="g_gyss">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="eFlex ePaginate eMon4">
+                    <div class="g_dramaflex">
+                        <div class="g_drama">
+
+                        </div>
+
+                        <br>
+
+                        <div class="g_dramas">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Her slutter listen over events -->
+
+        <div id="eEventNav"></div>
+
+
 </div>
 
-    <div id="sorterelements">
-        <select>
-            <option value="0">Action</option>
-            <option value="1">Komedie</option>
-            <option value="2">Drama</option>
-            <option value="3">Gys</option>
-        </select>
-    </div>
 
 
-
-
-<div class="g_actionflex">
-
-        <div class="g_action">
-
-        </div>
-
-    <br>
-
-        <div class="g_actions">
-
-        </div>
 
 
 </div>
 </div>
 
-<div class="g_komedieflex">
-    <div class="g_komedie">
 
-    </div>
-
-    <br>
-
-    <div class="g_komedies">
-
-    </div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
@@ -136,7 +193,7 @@
 
         dataType: "json",
 
-        url: "https://api.themoviedb.org/3/list/29",
+        url: "https://api.themoviedb.org/3/list/35",
 
         data: {
             'api_key':'9e87cab19a9443cceddfd5f527cb5e44',
@@ -149,12 +206,11 @@
 
             console.log(result);
             $(".g_komedie").html(result.items[0].title);
-            $(".g_komedie").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>");
-
+            $(".g_komedie").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
 
             $.each(result.items, function (k, v) {
 
-                $(".g_komedies").append(v.title + " - " + v.release_date + "<br>");
+                $(".g_komedies").append(v.title + " - " + v.release_date + "<br><br><br>");
 
             });
 
@@ -166,6 +222,175 @@
 
             alert("Fejl");
         }
+
+    });
+
+    $.ajax({
+
+        type: "GET",
+
+        dataType: "json",
+
+        url: "https://api.themoviedb.org/3/list/27",
+
+        data: {
+            'api_key':'9e87cab19a9443cceddfd5f527cb5e44',
+
+            'language':'da-dk'
+
+        },
+
+        success: function(result) {
+
+            console.log(result);
+            $(".g_gys").html(result.items[0].title);
+            $(".g_gys").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
+
+            $.each(result.items, function (k, v) {
+
+                $(".g_gyss").append(v.title + " - " + v.release_date + "<br><br><br>");
+
+            });
+
+        },
+
+        error: function (error) {
+            console.log(error);
+            // Hvis der sker fejl
+
+            alert("Fejl");
+        }
+
+    });
+
+    $.ajax({
+
+        type: "GET",
+
+        dataType: "json",
+
+        url: "https://api.themoviedb.org/3/list/30",
+
+        data: {
+            'api_key':'9e87cab19a9443cceddfd5f527cb5e44',
+
+            'language':'da-dk'
+
+        },
+
+        success: function(result) {
+
+            console.log(result);
+            $(".g_drama").html(result.items[0].title);
+            $(".g_drama").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
+
+            $.each(result.items, function (k, v) {
+
+                $(".g_dramas").append(v.title + " - " + v.release_date + "<br><br><br>");
+
+            });
+
+        },
+
+        error: function (error) {
+            console.log(error);
+            // Hvis der sker fejl
+
+            alert("Fejl");
+        }
+
+    });
+
+
+
+
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 767) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+        var eMon = 0;
+        $(".eDropBtn").click(function(){
+            if (eMon == 1) {
+                $(".eDropContent").css("display", "none");
+                eMon = 0;
+            }   else {
+                var eDropMenuHeight = 25 + $(".eDropBtn").offset().top;
+                $(".eDropContent").css("top", eDropMenuHeight);
+                $(".eDropContent").css("display", "flex");
+                eMon = 1;
+            }
+        });
+
+
+        $(".eMon0Btn").click(function () {
+            location.reload();
+        });
+
+        $(".eMon1Btn").click(function () {
+            $(".eMon2, .eMon3, .eMon4").css("display", "none");
+            $(".eMon2, .eMon3, .eMon4").addClass("eHidden");
+            $(".eMon1").css("display", "flex");
+            $(".eMon1").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon2Btn").click(function () {
+            $(".eMon1, .eMon3, .eMon4").css("display", "none");
+            $(".eMon1, .eMon3, .eMon4").addClass("eHidden");
+            $(".eMon2").css("display", "flex");
+            $(".eMon2").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon3Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4").addClass("eHidden");
+            $(".eMon3").css("display", "flex");
+            $(".eMon3").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon4Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon3").css("display", "none");
+            $(".eMon1, .eMon2, .eMon3").addClass("eHidden");
+            $(".eMon4").css("display", "flex");
+            $(".eMon4").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+
+
+        $(".eLoc0Btn").click(function () {
+            location.reload();
+        });
+
 
     });
 
