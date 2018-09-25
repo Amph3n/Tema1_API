@@ -197,14 +197,13 @@ background-color: black;
         success: function(result) {
 
             console.log(result);
-            $(".g_action").html(result.items[0].title);
-            $(".g_action").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
 
             $.each(result.items, function (k, v) {
-
-                $(".g_actions").append(v.title + " - " + v.release_date + "<br><br><br>");
-
-            });
+                if(k < 3) {
+                    $(".g_actions").append("<div class='g_actionbox'>" + v.title + " - " + v.release_date + "</div><br><br>");
+                    $(".g_action").append("<img src='http://image.tmdb.org/t/p/w500" + v.poster_path + "'>" + "<br>");
+                }
+                });
 
         },
 
@@ -235,13 +234,12 @@ background-color: black;
         success: function(result) {
 
             console.log(result);
-            $(".g_komedie").html(result.items[0].title);
-            $(".g_komedie").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
 
             $.each(result.items, function (k, v) {
-
-                $(".g_komedies").append(v.title + " - " + v.release_date + "<br><br><br>");
-
+                if(k < 3){
+                $(".g_komedies").append("<div class='g_komediebox'>" + v.title + " - " + v.release_date + "</div><br><br>");
+                $(".g_komedie").append("<img src='http://image.tmdb.org/t/p/w500" + v.poster_path +  "'>" + "<br>");
+            }
             });
 
         },
@@ -273,13 +271,12 @@ background-color: black;
         success: function(result) {
 
             console.log(result);
-            $(".g_gys").html(result.items[0].title);
-            $(".g_gys").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
 
             $.each(result.items, function (k, v) {
-
-                $(".g_gyss").append(v.title + " - " + v.release_date + "<br><br><br>");
-
+                if(k < 3) {
+                    $(".g_gyss").append("<div class='g_gysbox'>" + v.title + " - " + v.release_date + "</div><br><br>");
+                    $(".g_gys").append("<img src='http://image.tmdb.org/t/p/w500" + v.poster_path + "'>" + "<br>");
+                }
             });
 
         },
@@ -311,13 +308,12 @@ background-color: black;
         success: function(result) {
 
             console.log(result);
-            $(".g_drama").html(result.items[0].title);
-            $(".g_drama").html("<img src='http://image.tmdb.org/t/p/w500" + result.items[0].poster_path + "'>" );
 
             $.each(result.items, function (k, v) {
-
-                $(".g_dramas").append(v.title + " - " + v.release_date + "<br><br><br>");
-
+                if(k < 3){
+                $(".g_dramas").append("<div class='g_gysbox'>" + v.title + " - " + v.release_date + "</div><br><br>");
+                $(".g_drama").append("<img src='http://image.tmdb.org/t/p/w500" + v.poster_path +  "'>" + "<br>");
+                }
             });
 
         },
