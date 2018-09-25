@@ -231,6 +231,13 @@ nav {
 
 .g_actions{
   min-width:50%;
+  line-height: 19px;
+}
+
+.g_actionbox{
+  height: 15vh;
+  width: auto;
+  background-color: blue;
 }
 
 .g_komedieflex{
@@ -249,6 +256,13 @@ nav {
 
 .g_komedies{
   min-width:50%;
+  line-height: 19px;
+}
+
+.g_komediebox{
+  height: 15vh;
+  width: auto;
+  background-color: blue;
 }
 
 .g_gysflex{
@@ -257,6 +271,7 @@ nav {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
+  width: 100% ;
 }
 
 .g_gys img{
@@ -266,9 +281,16 @@ nav {
 }
 
 .g_gyss{
+
   min-width:50%;
+  line-height: 19px;
 }
 
+.g_gysbox{
+  height: 15vh;
+  width: auto;
+  background-color: blue;
+}
 .g_dramaflex{
   display: flex;
   flex-direction: row;
@@ -285,6 +307,13 @@ nav {
 
 .g_dramas{
   min-width:50%;
+  line-height: 19px;
+}
+
+.g_dramabox{
+  height: 15vh;
+  width: auto;
+  background-color: blue;
 }
 
 .eContentAside{
@@ -306,6 +335,7 @@ nav {
   position: relative;
   font-size: 12pt;
   width: 150px;
+  margin-top: 5%;
 }
 
 .eDropContent{
@@ -915,6 +945,59 @@ nav {
     margin-top: 10%;
   }
 
+  .g_action{
+    line-height: 7vh;
+  }
+  .g_actions{
+    min-width:50%;
+    line-height: 37px;
+  }
+
+  .g_actionbox{
+    height: 25vh;
+    width: auto;
+  }
+
+  .g_komedie{
+    line-height: 7vh;
+  }
+
+  .g_komedies{
+    min-width:50%;
+    line-height: 37px;
+  }
+
+  .g_komediebox{
+    height: 25vh;
+    width: auto;
+  }
+
+  .g_gys{
+    line-height: 7vh;
+  }
+
+  .g_gyss{
+    min-width:50%;
+    line-height: 37px;
+  }
+
+  .g_gysbox{
+    height: 25vh;
+    width: auto;
+  }
+
+  .g_drama{
+    line-height: 7vh;
+  }
+  .g_dramas{
+    min-width:50%;
+    line-height: 37px;
+  }
+
+  .g_dramabox{
+    height: 25vh;
+    width: auto;
+  }
 
   // Marcus Slut
 
