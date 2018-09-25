@@ -157,8 +157,7 @@ nav {
 
 .g_boksen {
   height: 100%;
-  background-color: white;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.3);
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%; }
@@ -182,7 +181,7 @@ nav {
 .g_actionbox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .g_komedieflex {
   display: flex;
@@ -203,7 +202,7 @@ nav {
 .g_komediebox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .g_gysflex {
   display: flex;
@@ -225,7 +224,7 @@ nav {
 .g_gysbox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .g_dramaflex {
   display: flex;
@@ -246,7 +245,7 @@ nav {
 .g_dramabox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .eContentAside {
   display: none; }
@@ -391,6 +390,10 @@ nav {
   display: none;
   font-family: Arial;
   margin-bottom: 5%; }
+
+.bbgimage {
+  background-color: #12266b; }
+
 
 .bbg {
   width: 100%;
@@ -603,11 +606,10 @@ nav {
 
   .g_boksen {
     height: 100%;
-    background-color: white;
-    opacity: 0.4;
+    background-color: rgba(255, 255, 255, 0.3);
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%; }
+    margin-top: 5%; }
 
   .g_action {
     line-height: 7vh; }
