@@ -119,7 +119,6 @@ nav {
   grid-row: 3;
   background-color: rgba(0, 0, 0, 0.85); }
 
-
 .h_blackbox {
   height: 100%;
   position: relative; }
@@ -158,8 +157,7 @@ nav {
 
 .g_boksen {
   height: 100%;
-  background-color: white;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.3);
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%; }
@@ -183,7 +181,7 @@ nav {
 .g_actionbox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .g_komedieflex {
   display: flex;
@@ -204,7 +202,7 @@ nav {
 .g_komediebox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .g_gysflex {
   display: flex;
@@ -226,7 +224,7 @@ nav {
 .g_gysbox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .g_dramaflex {
   display: flex;
@@ -247,7 +245,7 @@ nav {
 .g_dramabox {
   height: 15vh;
   width: auto;
-  background-color: blue; }
+  background-color: white; }
 
 .eContentAside {
   display: none; }
@@ -394,7 +392,7 @@ nav {
   margin-bottom: 5%; }
 
 .bbgimage {
-  background-color: black; }
+  background-color: #12266b; }
 
 .bbg {
   width: 100%;
@@ -425,7 +423,6 @@ nav {
   min-width: 50%; }
 
 @media screen and (min-width: 768px) {
-
   #h_header {
     grid-row: 1;
     height: auto;
@@ -487,7 +484,6 @@ nav {
     display: block;
     width: 25%;
     margin: 0; }
-
 
   .eDropBtn {
     width: 200px; }
@@ -596,7 +592,6 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: black; } }
-
 @media screen and (min-width: 1200px) {
   .h_poster2 {
     display: block; }
@@ -609,11 +604,10 @@ nav {
 
   .g_boksen {
     height: 100%;
-    background-color: white;
-    opacity: 0.4;
+    background-color: rgba(255, 255, 255, 0.3);
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%; }
+    margin-top: 5%; }
 
   .g_action {
     line-height: 7vh; }
