@@ -140,7 +140,7 @@ nav {
   left: 10px; }
 
 .h_thumb1 {
-  width: 50%;
+  width: 35%;
   margin: auto; }
 
 .h_thumb2 {
@@ -152,7 +152,8 @@ nav {
 .h_title, .h_title2, .h_title3 {
   font-family: Arial;
   font-weight: lighter;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 .g_boksen {
   height: 100%;
@@ -397,7 +398,6 @@ nav {
   min-width: 50%; }
 
 @media screen and (min-width: 768px) {
-
   #h_header {
     grid-row: 1;
     height: auto;
@@ -460,18 +460,11 @@ nav {
     width: 25%;
     margin: 0; }
 
-  .boverskrift {
-    margin-right: 5%; }
-
-  .boverskrift1 {
-    margin-right: 5%; }
-
-
   .eDropBtn {
     width: 200px; }
 
   .eDropContent {
-    width: 200px; } 
+    width: 200px; }
 
   .boverskrift {
     margin-right: 4%; }
@@ -558,7 +551,6 @@ nav {
     margin-top: 2%; }
 
   .bblogindlaeg2 {
-
     margin-left: 35%; }
 
   .bbg {
@@ -572,19 +564,7 @@ nav {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: black; } 
-
-
-  .btopimage {
-    width: 35%;
-    height: 400px;
-    margin-left: 30%;
-    margin-top: -3%; }
-
-  .bteaser1 {
-    margin-top: -3%; } 
-}
-
+    background-color: black; } }
 @media screen and (min-width: 1200px) {
   .h_poster2 {
     display: block; }
