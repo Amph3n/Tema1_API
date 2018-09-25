@@ -99,6 +99,9 @@ nav {
 .h_poster {
   background: url("../images/inter_halfrez.jpg") center no-repeat; }
 
+.h_poster2 {
+  display: none; }
+
 .h_headtext, .h_resumetext {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -113,12 +116,48 @@ nav {
   font-size: 13pt; }
 
 #h_footer {
-  grid-row: 3; }
+  grid-row: 3;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.h_blackbox {
+  height: 100%;
+  position: relative; }
+
+.h_arrowleft, .h_arrowright {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: inherit;
+  position: absolute;
+  top: 27%; }
+  .h_arrowleft i, .h_arrowright i {
+    color: white; }
+
+.h_arrowright {
+  right: 10px; }
+
+.h_arrowleft {
+  left: 10px; }
+
+.h_thumb1 {
+  width: 35%;
+  margin: auto; }
+
+.h_thumb2 {
+  display: none; }
+
+.h_thumb3 {
+  display: none; }
+
+.h_title, .h_title2, .h_title3 {
+  font-family: Arial;
+  font-weight: lighter;
+  color: white;
+  text-align: center; }
 
 .g_boksen {
   height: 100%;
-  background-color: white;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.3);
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%; }
@@ -136,20 +175,110 @@ nav {
   width: 50%; }
 
 .g_actions {
-  min-width: 50%; }
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_actionbox {
+  height: 15vh;
+  width: auto;
+  background-color: white; }
 
 .g_komedieflex {
   display: flex;
   flex-direction: row;
-  margin: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.g_komedie img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_komedies {
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_komediebox {
+  height: 15vh;
+  width: auto;
+  background-color: white; }
+
+.g_gysflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  width: 100%; }
+
+.g_gys img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_gyss {
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_gysbox {
+  height: 15vh;
+  width: auto;
+  background-color: white; }
+
+.g_dramaflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.g_drama img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_dramas {
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_dramabox {
+  height: 15vh;
+  width: auto;
+  background-color: white; }
+
+.eContentAside {
   display: none; }
 
-.g_sorter {
-  width: 200px; }
+.eContentAside {
+  display: block; }
+  .eContentAside .eAsideFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
-#sorterelements {
-  text-align: center;
+.eDropBtn {
+  display: block;
+  position: relative;
+  font-size: 12pt;
+  width: 150px;
   margin-top: 5%; }
+
+.eDropContent {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  width: 150px;
+  background-color: white;
+  outline: 5px auto #5d5d5d; }
+
+.eDropBtnMon {
+  display: inline;
+  position: relative; }
+
+#eEventNav {
+  margin-left: 2%; }
 
 .bblogindlaeg1 {
   width: 100%;
@@ -262,8 +391,35 @@ nav {
   font-family: Arial;
   margin-bottom: 5%; }
 
+
 .fritekst {
   color: red; }
+
+.bbgimage {
+  background-color: #12266b; }
+
+
+.bbg {
+  width: 100%;
+  height: auto;
+  background-color: #12266b;
+  opacity: 0.98; }
+
+.s_boksen {
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%; }
+
+.s_skuespillerflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
 
 .some {
   color: red; }
@@ -274,8 +430,239 @@ nav {
   height: 10px;
   outline: 2px auto black; }
 
+@media screen and (min-width: 768px) {
+  #h_header {
+    grid-row: 1;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% 1fr; }
+
+  .h_left img {
+    margin: 5px;
+    width: 195px; }
+
+  nav {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 1fr; }
+
+  .dropdown_btn {
+    display: none; }
+
+  .dropdown {
+    grid-column: 1; }
+
+  .h_content {
+    position: static;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    background-color: transparent;
+    outline: 0 auto white; }
+
+  #h_main {
+    position: relative; }
+
+  .h_help {
+    position: absolute;
+    top: 185px;
+    width: 315px;
+    left: 25px; }
+
+  .h_flex {
+    display: flex;
+    justify-content: space-evenly; }
+
+  .h_headtext, .h_resumetext {
+    padding: 4px; }
+
+  .h_headtext {
+    font-size: 16pt;
+    width: 140px; }
+
+  .h_resumetext {
+    font-size: 11pt; }
+
+  .h_thumb1, .h_thumb2, .h_thumb3 {
+    display: block;
+    width: 25%;
+    margin: 0; }
+
+  .eDropBtn {
+    width: 200px; }
+
+  .eDropContent {
+    width: 200px; }
+
+  .boverskrift {
+    margin-right: 4%; }
+
+  .boverskrift1 {
+    margin-right: 3%; }
+
+  .btopimage {
+    width: 35%;
+    height: 400px;
+    margin-left: 31.5%;
+    margin-top: -3%; }
+
+  .bteaser1 {
+    margin-top: -3%;
+    margin-right: 20%;
+    margin-left: 18%; }
+
+  .bbutton1 {
+    margin-left: 41%;
+    margin-top: 2%; }
+
+  .bsnowwhite, .btoystory, .bblairwitch, .bsoldier, .bjulia, .bbreakfastclub, .bwestside, .bpulpfiction, .bavatar, .bstarwars {
+    margin-right: 2%; }
+
+  .bsnowwhiteimage, .bsoldierimage, .bjuliaimage, .bbreakfastclubimage, .bwestsideimage, .bpulpfictionimage, .bstarwarsimage {
+    width: 35%;
+    height: 350px;
+    margin-left: 31.5%;
+    margin-top: -3%; }
+
+  .bsnowwhitetext, .btoystorytext, .bblairwitchtext, .bsoldiertext, .bjuliatext, .bbreakfastclubtext, .bwestsidetext, .bpulpfictiontext, .bavatartext, .bstarwarstext {
+    margin-left: 31.5%;
+    margin-right: 28.5%;
+    margin-top: -3%; }
+
+  .btoystory {
+    margin-top: -5%;
+    margin-right: 3%; }
+
+  .btoystoryimage, .bblairwitchimage, .bavatarimage {
+    width: 20%;
+    height: 500px;
+    margin-left: 38%;
+    margin-top: -3%; }
+
+  .bblairwitch {
+    margin-top: -4%; }
+
+  .bsoldier {
+    margin-top: -4%; }
+
+  .bjulia {
+    margin-top: -4%; }
+
+  .bbreakfastclub {
+    margin-top: -4%; }
+
+  .bwestside {
+    margin-top: -4%; }
+
+  .bpulpfiction {
+    margin-top: -4%; }
+
+  .bavatar {
+    margin-top: -4%; }
+
+  .bstarwars {
+    margin-top: -4%; }
+
+  .bimage2 {
+    width: 35%;
+    height: 400px;
+    margin-left: 31.5%;
+    margin-top: -3%; }
+
+  .bteaser2 {
+    margin-top: -3%;
+    margin-right: 20%;
+    margin-left: 18%; }
+
+  .bbutton3 {
+    margin-left: 41%;
+    margin-top: 2%; }
+
+  .bblogindlaeg2 {
+    margin-left: 35%; }
+
+  .bbg {
+    width: 70%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%; }
+
+  .bbgimage {
+    background-image: url("../images/biografbg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black; } }
 @media screen and (min-width: 1200px) {
+  .h_poster2 {
+    display: block; }
+
+  .h_poster {
+    display: none; }
+
+  #h_footer {
+    background-color: rgba(0, 0, 0, 0.95); }
+
   .g_boksen {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 20%;
+    margin-right: 20%;
+
+    margin-top: 5%; }
+
+  .g_action {
+    line-height: 7vh; }
+
+  .g_actions {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_actionbox {
+    height: 25vh;
+    width: auto; }
+
+  .g_komedie {
+    line-height: 7vh; }
+
+  .g_komedies {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_komediebox {
+    height: 25vh;
+    width: auto; }
+
+  .g_gys {
+    line-height: 7vh; }
+
+  .g_gyss {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_gysbox {
+    height: 25vh;
+    width: auto; }
+
+  .g_drama {
+    line-height: 7vh; }
+
+  .g_dramas {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_dramabox {
+    height: 25vh;
+    width: auto; }
+
+  .s_boksen {
     height: 100%;
     background-color: white;
     opacity: 0.4;

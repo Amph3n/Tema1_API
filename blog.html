@@ -6,27 +6,33 @@
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
 
+    <!-- Font awesome embed code !-->
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/mza3tny.css">
+
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Blog</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
-    <meta name="copyright" content="Information om copyright">
+    <meta name="author" content="Sofie Damsgaard">
+    <meta name="copyright" content="This webpage has been developed by Multimedia Design
+    and communication students at EASJ Slagelse for JCI Slagelse">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="description" content="Free Web tutorials">
+    <meta name="description" content="Blogside for Zap info">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- OpenGraph -->
-    <meta property="og:title" content="titel">
+    <meta property="og:title" content="Zap Info - Blog">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.domain.dk">
-    <meta property="og:image" content="https://www.domain.dk/img.jpg">
-    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:url" content="http://www.sofiedamsgaardchristensen.dk/blog">
+    <meta property="og:image" content="http://www.sofiedamsgaardchristensen.dk/avatar.jpg">
+    <meta property="og:description" content="Her kan du læse Zap Infos blog.">
     <meta property="og:locale" content="da_DK">
 
 
@@ -36,9 +42,40 @@
 
 
 </head>
-
 <!-- i <body> har man alt indhold på siden -->
-<body>
+<body class="bbgimage">
+<div class="bbg">
+
+    <header id="h_header">
+
+        <div class="h_left">
+            <a href="index.html">
+                <img src="images/zap_info.svg" class="h_logo">
+            </a>
+        </div>
+
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+
+                    <div class="h_menu1">
+                        <a href="genre.html">Genre</a>
+                    </div>
+
+                    <div class="h_menu3">
+                        <a href="blog.html">Blog</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
 
 <div class="boverskrift"><h1>Blog</h1></div>
 
@@ -60,7 +97,7 @@
 
 <div class="bblogindlaeg1">
     <h3 class="bsnowwhite">
-        10. Disneys Snowwhite: Første tegnede spillefilm.
+        10. Disneys Snowwhite: Første tegnede spillefilm
     </h3>
     <img class="bsnowwhiteimage" src="images/snowwhite.jpg">
     <div>
@@ -75,7 +112,7 @@
         </p>
 
         <h3 class="btoystory">
-            9. Toy Story: Første fuldlængde CGI spillefilm.
+            9. Toy Story: Første CGI film i fuld spillelængde
         </h3>
         <img class="btoystoryimage" src="images/toystory.jpeg">
         <p class="btoystorytext">
@@ -87,7 +124,7 @@
         </p>
 
         <h3 class="bblairwitch">
-            8. The Blair witch project 1999: Banebrydende found footage.
+            8. The Blair witch project 1999: Banebrydende found footage
         </h3>
         <img class="bblairwitchimage" src="images/blairwitch.jpg">
         <p class="bblairwitchtext">
@@ -100,7 +137,7 @@
         </p>
 
         <h3 class="bsoldier">
-            7. Billy Lynn’s Long Halftime Walk: Første film skudt med 120 frames pr. Second.
+            7. Billy Lynn’s Long Halftime Walk: Første film skudt med 120 frames pr. Second
         </h3>
         <img class="bsoldierimage" src="images/soldier.jpg">
         <p class="bsoldiertext">
@@ -113,7 +150,7 @@
         </p>
 
         <h3 class="bjulia">
-            6. Julia and Julia - Første digitale feature film.
+            6. Julia and Julia - Første digitale feature film
         </h3>
         <img class="bjuliaimage" src="images/juliaandjulia.jpg">
         <p class="bjuliatext">
@@ -125,7 +162,7 @@
         </p>
 
         <h3 class="bbreakfastclub">
-            5. Breakfast Club: Nyskabende Coming of Age film.
+            5. Breakfast Club: Nyskabende Coming of Age film
         </h3>
         <img class="bbreakfastclubimage" src="images/breakfastclub.jpg">
         <p class="bbreakfastclubtext">
@@ -137,7 +174,7 @@
         </p>
 
         <h3 class="bwestside">
-            4. West side story: Bragte musical i højsædet.
+            4. West side story: Bragte musical i højsædet
         </h3>
         <img class="bwestsideimage" src="images/westsidestory.jpg">
         <p class="bwestsidetext">
@@ -149,7 +186,7 @@
         </p>
 
         <h3 class="bpulpfiction">
-            3. Pulp Fiction: Revulotionerede dialogen.
+            3. Pulp Fiction: Revulotionerede dialogen
         </h3>
         <img class="bpulpfictionimage" src="images/pulpfiction.jpg">
         <p class="bpulpfictiontext">
@@ -162,7 +199,7 @@
         </p>
 
         <h3 class="bavatar">
-            2. Avatar: For at gøre 3D populært.
+            2. Avatar: For at gøre 3D populært
         </h3>
         <img class="bavatarimage" src="images/avatar.jpg">
         <p class="bavatartext">
@@ -175,7 +212,7 @@
         </p>
 
         <h3 class="bstarwars">
-           1. Star wars: Stærk fanbase og massere af merchandise.
+           1. Star wars: Stærk fanbase og masser af merchandise
         </h3>
         <img class="bstarwarsimage" src="images/starwars.png">
         <p class="bstarwarstext">
@@ -187,8 +224,8 @@
         </p>
 
         <label for="besked"></label> <br>
-        <textarea id="besked" name="subject" placeholder="Skriv din kommentar her..."
-                  style="height:200px; width:200%; font-family: 'Arial', sans-serif; font-size: 13pt; padding-top: 1%; border: 1px solid white;" ></textarea>
+        <textarea class="bkommentar" id="besked" name="subject" placeholder="Skriv din kommentar her..."
+                  style="height:200px; width:100%; font-family: 'Arial', sans-serif; font-size: 13pt; padding-top: 1%; border: 1px solid black;" ></textarea>
 
         <br>
 
@@ -211,10 +248,39 @@
 <div class="bblogindlaeg2">
     Her ville blogindlæg nummer to samt endnu en kommentarbox være.
 </div>
-
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 767) {
+                $(".h_content").css( "display", "flex");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+
+
+
         $(".bbutton1").click(function(){
             $(".bblogindlaeg1").slideToggle("slow");
         });
