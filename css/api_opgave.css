@@ -115,6 +115,19 @@ nav {
 #h_footer {
   grid-row: 3; }
 
+
+.h_blackbox {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.h_arrowleft, .h_arrowright {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: inherit; }
+  .h_arrowleft i, .h_arrowright i {
+    color: white; }
+
 .g_boksen {
   height: 100%;
   background-color: white;
@@ -141,15 +154,79 @@ nav {
 .g_komedieflex {
   display: flex;
   flex-direction: row;
-  margin: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.g_komedie img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_komedies {
+  min-width: 50%; }
+
+.g_gysflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.g_gys img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_gyss {
+  min-width: 50%; }
+
+.g_dramaflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%; }
+
+.g_drama img {
+  border-radius: 50%;
+  max-height: 200px;
+  width: 50%; }
+
+.g_dramas {
+  min-width: 50%; }
+
+.eContentAside {
   display: none; }
 
-.g_sorter {
-  width: 200px; }
+.eContentAside {
+  display: block; }
+  .eContentAside .eAsideFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
-#sorterelements {
-  text-align: center;
-  margin-top: 5%; }
+.eDropBtn {
+  display: block;
+  position: relative;
+  font-size: 12pt;
+  width: 150px; }
+
+.eDropContent {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  width: 150px;
+  background-color: white;
+  outline: 5px auto #5d5d5d; }
+
+.eDropBtnMon {
+  display: inline;
+  position: relative; }
+
+#eEventNav {
+  margin-left: 2%; }
 
 .bblogindlaeg1 {
   width: 100%;
@@ -294,6 +371,13 @@ nav {
   min-width: 50%; }
 
 @media screen and (min-width: 768px) {
+
+  .eDropBtn {
+    width: 200px; }
+
+  .eDropContent {
+    width: 200px; } 
+
   .boverskrift {
     margin-right: 4%; }
 
@@ -379,6 +463,7 @@ nav {
     margin-top: 2%; }
 
   .bblogindlaeg2 {
+
     margin-left: 35%; }
 
   .bbg {
@@ -392,7 +477,10 @@ nav {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: black; } }
+    background-color: black; } 
+
+     }
+
 @media screen and (min-width: 1200px) {
   .g_boksen {
     height: 100%;
