@@ -529,6 +529,18 @@ nav {
   font-family: Arial;
   margin-bottom: 5%;
 }
+
+.bbgimage {
+  background-color: black;
+}
+
+.bbg {
+  width: 100%;
+  height: auto;
+  background-color: rgb(240, 248, 255);
+}
+
+
 // Sofie Slut
 
 
@@ -590,7 +602,7 @@ nav {
   // Sofie Start
 
 .boverskrift {
-  margin-right: 3%;
+  margin-right: 4%;
 }
 
 .boverskrift1 {
@@ -611,7 +623,7 @@ nav {
 }
 
 .bbutton1 {
-  margin-left: 43%;
+  margin-left: 41%;
   margin-top: 2%;
 }
 
@@ -690,13 +702,29 @@ nav {
 }
 
 .bbutton3 {
-  margin-left: 43%;
+  margin-left: 41%;
   margin-top: 2%;
 }
 
 .bblogindlaeg2 {
   margin-left: 35%;
 }
+
+.bbg {
+  width: 70%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 15%;
+}
+
+.bbgimage {
+  background-image: url("../images/biografbg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+
 
 
   // Sofie Slut
