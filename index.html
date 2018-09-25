@@ -65,8 +65,8 @@
 
     <main id="h_main">
         <img src="images/inter_halfrez.jpg" class="h_poster">
-
-        </img>
+        <img src="images/inter_fullrez.jpg" class="h_poster2">
+        <div class="h_help">
             <h1 class="h_headtext">
                     Interstellar
             </h1>
@@ -75,6 +75,7 @@
 
                 Et hold forskere, deriblandt familiefaren Cooper, må derfor udføre den vigtigste mission i menneskehedens historie: Rejse ud til andre galakser for at undersøge om vi har en fremtid blandt stjernerne.
             </h3>
+        </div>
     </main>
 
     <footer id="h_footer">
@@ -83,11 +84,34 @@
                 <i class="fa fa-angle-left"></i>
             </button>
 
+            <div class="h_flex">
+                <div class="h_thumb1">
+                    <div class="h_pic1">
+                        <div class="h_title"> Captain America: Civil War </div>
+                        <img src="images/thumbnail.jpg" class="nail">
+                    </div>
+                </div>
+
+                <div class="h_thumb2">
+                    <div class="h_pic2">
+                        <div class="h_title2"> Captain America: Civil War </div>
+                        <img src="images/thumb2.jpg" class="nail2">
+                    </div>
+                </div>
+
+                <div class="h_thumb3">
+                    <div class="h_pic3">
+                        <div class="h_title3"> Captain America: Civil War </div>
+                        <img src="images/thumb3.jpg" class="nail3">
+                    </div>
+                </div>
+            </div>
+
             <button class="h_arrowright">
                 <i class="fa fa-angle-right"></i>
             </button>
 
-            
+
         </div>
 
     </footer>
@@ -118,7 +142,7 @@
             var width = $(window).width();
 
             if (width >= 767) {
-                $(".h_content").css( "display", "grid");
+                $(".h_content").css( "display", "flex");
             }
             else {
                 $(".h_content").css("display", "none");

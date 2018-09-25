@@ -99,6 +99,9 @@ nav {
 .h_poster {
   background: url("../images/inter_halfrez.jpg") center no-repeat; }
 
+.h_poster2 {
+  display: none; }
+
 .h_headtext, .h_resumetext {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -113,20 +116,43 @@ nav {
   font-size: 13pt; }
 
 #h_footer {
-  grid-row: 3; }
-
+  grid-row: 3;
+  background-color: rgba(0, 0, 0, 0.85); }
 
 .h_blackbox {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85); }
+  position: relative; }
 
 .h_arrowleft, .h_arrowright {
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0);
-  font-family: inherit; }
+  font-family: inherit;
+  position: absolute;
+  top: 27%; }
   .h_arrowleft i, .h_arrowright i {
     color: white; }
+
+.h_arrowright {
+  right: 10px; }
+
+.h_arrowleft {
+  left: 10px; }
+
+.h_thumb1 {
+  width: 50%;
+  margin: auto; }
+
+.h_thumb2 {
+  display: none; }
+
+.h_thumb3 {
+  display: none; }
+
+.h_title, .h_title2, .h_title3 {
+  font-family: Arial;
+  font-weight: lighter;
+  color: white; }
 
 .g_boksen {
   height: 100%;
@@ -275,22 +301,6 @@ nav {
   font-family: Arial;
   margin-bottom: 5%; }
 
-@media screen and (min-width: 768px) {
-  .boverskrift {
-    margin-right: 5%; }
-
-  .boverskrift1 {
-    margin-right: 5%; }
-
-  .btopimage {
-    width: 35%;
-    height: 400px;
-    margin-left: 30%;
-    margin-top: -3%; }
-
-  .bteaser1 {
-    margin-top: -3%; } 
-
 .s_boksen {
   height: 100%;
   background-color: white;
@@ -312,9 +322,95 @@ nav {
   width: 50%; }
 
 .s_skuetekst1 {
-  min-width: 50%; }}
+  min-width: 50%; }
 
+@media screen and (min-width: 768px) {
+  #h_header {
+    grid-row: 1;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% 1fr; }
+
+  .h_left img {
+    margin: 5px;
+    width: 195px; }
+
+  nav {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 1fr; }
+
+  .dropdown_btn {
+    display: none; }
+
+  .dropdown {
+    grid-column: 1; }
+
+  .h_content {
+    position: static;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    background-color: transparent;
+    outline: 0 auto white; }
+
+  #h_main {
+    position: relative; }
+
+  .h_help {
+    position: absolute;
+    top: 185px;
+    width: 315px;
+    left: 25px; }
+
+  .h_flex {
+    display: flex;
+    justify-content: space-evenly; }
+
+  .h_headtext, .h_resumetext {
+    padding: 4px; }
+
+  .h_headtext {
+    font-size: 16pt;
+    width: 140px; }
+
+  .h_resumetext {
+    font-size: 11pt; }
+
+  .h_thumb1, .h_thumb2, .h_thumb3 {
+    display: block;
+    width: 25%;
+    margin: 0; }
+
+  .boverskrift {
+    margin-right: 5%; }
+
+  .boverskrift1 {
+    margin-right: 5%; }
+
+  .btopimage {
+    width: 35%;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: -3%; }
+
+  .bteaser1 {
+    margin-top: -3%; } }
 @media screen and (min-width: 1200px) {
+  .h_poster2 {
+    display: block; }
+
+  .h_poster {
+    display: none; }
+
+  #h_footer {
+    background-color: rgba(0, 0, 0, 0.95); }
+
   .g_boksen {
     height: 100%;
     background-color: white;
@@ -330,6 +426,5 @@ nav {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%; } }
-
 
 /*# sourceMappingURL=api_opgave.css.map */
