@@ -391,6 +391,10 @@ nav {
   font-family: Arial;
   margin-bottom: 5%; }
 
+
+.fritekst {
+  color: red; }
+
 .bbgimage {
   background-color: #12266b; }
 
@@ -416,13 +420,15 @@ nav {
   margin-right: 5%;
   margin-top: 5%; }
 
-.s_skue1 img {
-  border-radius: 50%;
-  max-height: 200px;
-  width: 50%; }
 
-.s_skuetekst1 {
-  min-width: 50%; }
+.some {
+  color: red; }
+
+.tyndbox {
+  background-color: white;
+  width: 100%;
+  height: 10px;
+  outline: 2px auto black; }
 
 @media screen and (min-width: 768px) {
   #h_header {
@@ -609,6 +615,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.3);
     margin-left: 20%;
     margin-right: 20%;
+
     margin-top: 5%; }
 
   .g_action {
