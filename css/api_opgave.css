@@ -394,10 +394,12 @@ nav {
 .bbgimage {
   background-color: #12266b; }
 
+
 .bbg {
   width: 100%;
   height: auto;
-  background-color: aliceblue; }
+  background-color: #12266b;
+  opacity: 0.98; }
 
 .s_boksen {
   height: 100%;
