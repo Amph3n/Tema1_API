@@ -127,6 +127,10 @@ nav {
   background: url("../images/inter_halfrez.jpg") center no-repeat;
 }
 
+.h_poster2 {
+  display: none;
+}
+
 .h_headtext, .h_resumetext {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -145,11 +149,12 @@ nav {
 
 #h_footer {
   grid-row: 3;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .h_blackbox {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  position: relative;
 }
 
 .h_arrowleft, .h_arrowright {
@@ -157,11 +162,42 @@ nav {
   outline: none;
   background-color: rgba(0, 0, 0, -1);
   font-family: inherit;
+  position: absolute;
+  top: 27%;
 
   i {
     color: white;
   }
 }
+
+.h_arrowright {
+  right: 10px;
+}
+
+.h_arrowleft {
+  left: 10px;
+}
+
+.h_thumb1 {
+  width: 35%;
+  margin: auto;
+}
+
+.h_thumb2 {
+  display: none;
+}
+
+.h_thumb3 {
+  display: none;
+}
+
+.h_title, .h_title2, .h_title3 {
+  font-family: Arial;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
 
 
 // Oliver Slut
@@ -559,6 +595,18 @@ nav {
   font-family: Arial;
   margin-bottom: 5%;
 }
+
+.bbgimage {
+  background-color: black;
+}
+
+.bbg {
+  width: 100%;
+  height: auto;
+  background-color: rgb(240, 248, 255);
+}
+
+
 // Sofie Slut
 
 
@@ -599,7 +647,81 @@ nav {
 
   // Oliver start
 
+  #h_header {
+    grid-row: 1;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 25% 1fr;
+  }
 
+  .h_left img {
+    margin: 5px;
+    width: 195px;
+  }
+
+  nav {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .dropdown_btn {
+    display: none;
+  }
+
+  .dropdown {
+    grid-column: 1;
+  }
+
+  .h_content {
+    position: static;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    background-color: transparent;
+    outline: 0 auto white;
+  }
+
+
+  #h_main {
+    position: relative;
+  }
+
+  .h_help {
+    position: absolute;
+    top: 185px;
+    width: 315px;
+    left: 25px;
+  }
+
+  .h_flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .h_headtext, .h_resumetext {
+    padding: 4px;
+  }
+
+  .h_headtext {
+    font-size: 16pt;
+    width: 140px;
+  }
+
+  .h_resumetext {
+    font-size: 11pt;
+  }
+
+  .h_thumb1, .h_thumb2, .h_thumb3 {
+    display: block;
+    width: 25%;
+    margin: 0;
+  }
 
   // Oliver Slut
 
@@ -620,7 +742,7 @@ nav {
   // Sofie Start
 
 .boverskrift {
-  margin-right: 3%;
+  margin-right: 4%;
 }
 
 .boverskrift1 {
@@ -641,7 +763,7 @@ nav {
 }
 
 .bbutton1 {
-  margin-left: 43%;
+  margin-left: 41%;
   margin-top: 2%;
 }
 
@@ -720,13 +842,29 @@ nav {
 }
 
 .bbutton3 {
-  margin-left: 43%;
+  margin-left: 41%;
   margin-top: 2%;
 }
 
 .bblogindlaeg2 {
   margin-left: 35%;
 }
+
+.bbg {
+  width: 70%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 15%;
+}
+
+.bbgimage {
+  background-image: url("../images/biografbg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+
 
 
   // Sofie Slut
@@ -777,6 +915,18 @@ nav {
 
 
   // Oliver start
+
+  .h_poster2 {
+    display: block;
+  }
+
+  .h_poster {
+    display: none;
+  }
+
+  #h_footer {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
 
 
 
