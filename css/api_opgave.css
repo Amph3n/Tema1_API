@@ -115,6 +115,19 @@ nav {
 #h_footer {
   grid-row: 3; }
 
+
+.h_blackbox {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.h_arrowleft, .h_arrowright {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: inherit; }
+  .h_arrowleft i, .h_arrowright i {
+    color: white; }
+
 .g_boksen {
   height: 100%;
   background-color: white;
@@ -350,11 +363,100 @@ nav {
   min-width: 50%; }
 
 @media screen and (min-width: 768px) {
+
   .eDropBtn {
     width: 200px; }
 
   .eDropContent {
-    width: 200px; } }
+    width: 200px; } 
+
+  .boverskrift {
+    margin-right: 3%; }
+
+  .boverskrift1 {
+    margin-right: 3%; }
+
+  .btopimage {
+    width: 35%;
+    height: 400px;
+    margin-left: 31.5%;
+    margin-top: -3%; }
+
+  .bteaser1 {
+    margin-top: -3%;
+    margin-right: 20%;
+    margin-left: 18%; }
+
+  .bbutton1 {
+    margin-left: 43%;
+    margin-top: 2%; }
+
+  .bsnowwhite, .btoystory, .bblairwitch, .bsoldier, .bjulia, .bbreakfastclub, .bwestside, .bpulpfiction, .bavatar, .bstarwars {
+    margin-right: 2%; }
+
+  .bsnowwhiteimage, .bsoldierimage, .bjuliaimage, .bbreakfastclubimage, .bwestsideimage, .bpulpfictionimage, .bstarwarsimage {
+    width: 35%;
+    height: 350px;
+    margin-left: 31.5%;
+    margin-top: -3%; }
+
+  .bsnowwhitetext, .btoystorytext, .bblairwitchtext, .bsoldiertext, .bjuliatext, .bbreakfastclubtext, .bwestsidetext, .bpulpfictiontext, .bavatartext, .bstarwarstext {
+    margin-left: 31.5%;
+    margin-right: 28.5%;
+    margin-top: -3%; }
+
+  .btoystory {
+    margin-top: -5%;
+    margin-right: 3%; }
+
+  .btoystoryimage, .bblairwitchimage, .bavatarimage {
+    width: 20%;
+    height: 500px;
+    margin-left: 38%;
+    margin-top: -3%; }
+
+  .bblairwitch {
+    margin-top: -4%; }
+
+  .bsoldier {
+    margin-top: -4%; }
+
+  .bjulia {
+    margin-top: -4%; }
+
+  .bbreakfastclub {
+    margin-top: -4%; }
+
+  .bwestside {
+    margin-top: -4%; }
+
+  .bpulpfiction {
+    margin-top: -4%; }
+
+  .bavatar {
+    margin-top: -4%; }
+
+  .bstarwars {
+    margin-top: -4%; }
+
+  .bimage2 {
+    width: 35%;
+    height: 400px;
+    margin-left: 31.5%;
+    margin-top: -3%; }
+
+  .bteaser2 {
+    margin-top: -3%;
+    margin-right: 20%;
+    margin-left: 18%; }
+
+  .bbutton3 {
+    margin-left: 43%;
+    margin-top: 2%; }
+
+  .bblogindlaeg2 {
+    margin-left: 35%; } }
+
 @media screen and (min-width: 1200px) {
   .g_boksen {
     height: 100%;
