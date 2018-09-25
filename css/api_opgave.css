@@ -115,7 +115,6 @@ nav {
 #h_footer {
   grid-row: 3; }
 
-
 .h_blackbox {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85); }
@@ -149,7 +148,13 @@ nav {
   width: 50%; }
 
 .g_actions {
-  min-width: 50%; }
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_actionbox {
+  height: 15vh;
+  width: auto;
+  background-color: blue; }
 
 .g_komedieflex {
   display: flex;
@@ -164,14 +169,21 @@ nav {
   width: 50%; }
 
 .g_komedies {
-  min-width: 50%; }
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_komediebox {
+  height: 15vh;
+  width: auto;
+  background-color: blue; }
 
 .g_gysflex {
   display: flex;
   flex-direction: row;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  width: 100%; }
 
 .g_gys img {
   border-radius: 50%;
@@ -179,7 +191,13 @@ nav {
   width: 50%; }
 
 .g_gyss {
-  min-width: 50%; }
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_gysbox {
+  height: 15vh;
+  width: auto;
+  background-color: blue; }
 
 .g_dramaflex {
   display: flex;
@@ -194,7 +212,13 @@ nav {
   width: 50%; }
 
 .g_dramas {
-  min-width: 50%; }
+  min-width: 50%;
+  line-height: 19px; }
+
+.g_dramabox {
+  height: 15vh;
+  width: auto;
+  background-color: blue; }
 
 .eContentAside {
   display: none; }
@@ -210,7 +234,8 @@ nav {
   display: block;
   position: relative;
   font-size: 12pt;
-  width: 150px; }
+  width: 150px;
+  margin-top: 5%; }
 
 .eDropContent {
   display: none;
@@ -363,12 +388,11 @@ nav {
   min-width: 50%; }
 
 @media screen and (min-width: 768px) {
-
   .eDropBtn {
     width: 200px; }
 
   .eDropContent {
-    width: 200px; } 
+    width: 200px; }
 
   .boverskrift {
     margin-right: 3%; }
@@ -456,7 +480,6 @@ nav {
 
   .bblogindlaeg2 {
     margin-left: 35%; } }
-
 @media screen and (min-width: 1200px) {
   .g_boksen {
     height: 100%;
@@ -465,6 +488,50 @@ nav {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%; }
+
+  .g_action {
+    line-height: 7vh; }
+
+  .g_actions {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_actionbox {
+    height: 25vh;
+    width: auto; }
+
+  .g_komedie {
+    line-height: 7vh; }
+
+  .g_komedies {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_komediebox {
+    height: 25vh;
+    width: auto; }
+
+  .g_gys {
+    line-height: 7vh; }
+
+  .g_gyss {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_gysbox {
+    height: 25vh;
+    width: auto; }
+
+  .g_drama {
+    line-height: 7vh; }
+
+  .g_dramas {
+    min-width: 50%;
+    line-height: 37px; }
+
+  .g_dramabox {
+    height: 25vh;
+    width: auto; }
 
   .s_boksen {
     height: 100%;
